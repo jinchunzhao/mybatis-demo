@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jy.study.mybatis.mapper.AdminMapper">
+	<!-- 通用查询结果列 -->
+	<sql id="Base_Column_List">
+        a.id, a.user_name , a.password , a.real_name , a.birthday , a.is_enable , a.create_date, a.creator, a.modifier,
+        a.phone , a.gender, a.email, a.avatar, a.dept_id , a.is_built_in, a.open_id , a.version , a.modify_date
+    </sql>
+
+
+
+
+
+	<!--分页查询导出的数据-->
+	<select id="selectAll" resultType="com.jy.study.mybatis.entity.Admin">
+		select
+		<include refid="Base_Column_List"/>
+		from sys_admin a
+		order by a.id desc
+	</select>
+
+</mapper>

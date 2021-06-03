@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 配置文件的根元素 -->
+<configuration>
+    <!-- 属性：定义配置外在化 -->
+<!--    <properties></properties>-->
+    <!-- 设置：定义mybatis的一些全局性设置 -->
+    <settings>
+        <!-- 设置日志输出为logf4 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!-- 将以下画线方法命名的数据库列映射到java对象的驼峰命名属性中 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--  这个配置使全局的映射器(二级缓存)启用或禁止缓存      -->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    <!-- 配置别名 -->
+    <typeAliases>
+        <package name ="com.jy.study.mybatis.entity"/>
+    </typeAliases>
+    <!-- 类型处理器：定义Java类型与数据库中的数据类型之间的转换关系 -->
+<!--    <typeHandlers></typeHandlers>-->
+<!--    &lt;!&ndash; 对象工厂 &ndash;&gt;-->
+<!--    <objectFactory type=""></objectFactory>-->
+<!--    &lt;!&ndash; 插件：mybatis的插件,插件可以修改mybatis的内部运行规则 &ndash;&gt;-->
+<!--    <plugins>-->
+<!--        <plugin interceptor=""></plugin>-->
+<!--    </plugins>-->
+    <!-- 环境：配置mybatis的环境 -->
+    <environments default="development">
+        <!-- 环境变量：可以配置多个环境变量，比如使用多数据源时，就需要配置多个环境变量 -->
+        <environment id="development">
+            <!-- 事务管理器 -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!-- 数据源 -->
+            <dataSource type="UNPOOLED">
+                <property name = "driver" value = "com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://8.129.109.34:3306/mybatis-study?useSSL=false&amp;serverTimeZone=UTC&amp;characterEncoding=utf-8"
+                          />
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 数据库厂商标识 -->
+<!--    <databaseIdProvider type=""></databaseIdProvider>-->
+
+    <mappers>
+        <mapper resource = "com/jy/study/mybatis/mapper/AdminMapper.xml"/>
+<!--        <package name="com.jy.study.mybatis.mapper"/>-->
+
+    </mappers>
+</configuration>
