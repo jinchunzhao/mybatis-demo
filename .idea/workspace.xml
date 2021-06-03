@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="" />
+    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="手写简易ORM框架 半成品">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -22,16 +28,18 @@
     </option>
   </component>
   <component name="ProjectId" id="1tCl1ZCv6Qi3n3YXoMbPww9Z92E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -87,11 +95,35 @@
       <updated>1622280737839</updated>
       <workItem from="1622280739143" duration="2193000" />
       <workItem from="1622722923607" duration="216000" />
+      <workItem from="1622723192688" duration="406000" />
     </task>
+    <task id="LOCAL-00001" summary="手写简易ORM框架 半成品">
+      <created>1622723397729</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622723397729</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="手写简易ORM框架 半成品" />
+    <option name="LAST_COMMIT_MESSAGE" value="手写简易ORM框架 半成品" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

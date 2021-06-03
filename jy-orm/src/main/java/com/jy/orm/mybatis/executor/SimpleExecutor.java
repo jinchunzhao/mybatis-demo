@@ -46,6 +46,7 @@ public class SimpleExecutor implements Executor{
 //            ParameterHandler parameterHandler = new DfaultParameterHandler(parameter);
 //            parameterHandler.setParameters(preparedStatement);
 //
+
 //            //执行sql，得到结果集ResultSet
 //            ResultSet resultSet = statementHandler.query(preparedStatement);
             ResultSet resultSet = null;
