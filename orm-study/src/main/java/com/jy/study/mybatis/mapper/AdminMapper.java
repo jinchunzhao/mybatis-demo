@@ -1,7 +1,7 @@
 package com.jy.study.mybatis.mapper;
 
 
-import com.jy.study.mybatis.entity.Admin;
+import com.jy.study.entity.Admin;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

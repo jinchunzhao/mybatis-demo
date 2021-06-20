@@ -12,7 +12,7 @@
 
 
 	<!--分页查询导出的数据-->
-	<select id="selectAll" resultType="com.jy.study.mybatis.entity.Admin">
+	<select id="selectAll" resultType="com.jy.study.entity.Admin">
 		select
 		<include refid="Base_Column_List"/>
 		from sys_admin a

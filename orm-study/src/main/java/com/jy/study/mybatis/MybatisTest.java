@@ -2,7 +2,7 @@ package com.jy.study.mybatis;
 
 
 
-import com.jy.study.mybatis.entity.Admin;
+import com.jy.study.entity.Admin;
 import com.jy.study.mybatis.mapper.AdminMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;

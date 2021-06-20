@@ -1,4 +1,4 @@
-package com.jy.study.mybatis.entity;
+package com.jy.study.entity;
 
 
 
