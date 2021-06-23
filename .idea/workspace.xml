@@ -4,17 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="手写简易ORM框架 半成品">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/dbutils/JdbcUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/dbutils/QueryRunnerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/jdbc/JdbcStudy.java" afterDir="false" />
+    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="使用jdbc dbutils操作数据库">
+      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/PreparedStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/SimpleStatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/StatementHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/parameter/DefaultParameterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/parameter/ParameterHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/entity/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/constants/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/constants/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/Executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/Executor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/mapping/MappedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/mapping/MappedStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSessionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/resources/conf.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/dbutils/QueryRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/dbutils/QueryRunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisStudy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm-study/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -55,7 +66,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../githubData" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -83,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jy.study.mybatis.MybatisTest" />
+    <configuration name="MybatisStudy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jy.study.mybatis.MybatisStudy" />
       <module name="orm-study" />
       <extension name="coverage">
         <pattern>
@@ -96,21 +110,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.JdbcStudy" />
-        <item itemvalue="Application.MybatisTest" />
+        <item itemvalue="Application.MybatisStudy" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +130,9 @@
       <workItem from="1622723192688" duration="1607000" />
       <workItem from="1622815870507" duration="444000" />
       <workItem from="1623853140292" duration="178000" />
-      <workItem from="1624176251427" duration="3904000" />
+      <workItem from="1624176251427" duration="10866000" />
+      <workItem from="1624279539115" duration="3361000" />
+      <workItem from="1624446571876" duration="1313000" />
     </task>
     <task id="LOCAL-00001" summary="手写简易ORM框架 半成品">
       <created>1622723397729</created>
@@ -143,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622723604332</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="使用jdbc dbutils操作数据库">
+      <created>1624181380992</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624181380992</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,13 +175,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="手写简易ORM框架 半成品" />
-    <option name="LAST_COMMIT_MESSAGE" value="手写简易ORM框架 半成品" />
+    <MESSAGE value="使用jdbc dbutils操作数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用jdbc dbutils操作数据库" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisTest.java</url>
+          <url>file://$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisStudy.java</url>
           <line>19</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

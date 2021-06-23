@@ -34,6 +34,9 @@ public class Configuration {
      */
     protected final Map<String, MappedStatement> mappedStatements = new HashMap<>();
 
+    /**
+     * 代理
+     */
     protected final  MapperRegistry mapperRegistry = new MapperRegistry();
 
     /**

@@ -13,7 +13,7 @@ public class MappedStatement {
 
 
     /**
-     * 命名空间，对应着mapper接口的全路径名
+     * 命名空间namespace，对应着mapper接口的全路径名
      */
     private String namespace;
 
@@ -33,7 +33,7 @@ public class MappedStatement {
     private String sql;
 
     /**
-     * SQL语句类型
+     * SQL语句类型,update insert delete select
      */
     private SqlType sqlCommandType;
 

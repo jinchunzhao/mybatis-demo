@@ -15,7 +15,10 @@ import java.net.URL;
  */
 public class DefaultSqlSessionFactory implements SqlSessionFactory{
 
-    private  final Configuration configuration;
+    /**
+     * JDBC配置信息
+     */
+    private final Configuration configuration;
 
     public DefaultSqlSessionFactory(Configuration configuration) {
         this.configuration = configuration;
@@ -25,8 +28,9 @@ public class DefaultSqlSessionFactory implements SqlSessionFactory{
 
     @Override
     public SqlSession openSession() {
-        SqlSession slSession = new DefaultSqlSession(this.configuration);
-        return slSession;
+        //SqlSession对象就是jdbc信息
+        SqlSession sqlSession = new DefaultSqlSession(this.configuration);
+        return sqlSession;
     }
 
     /**

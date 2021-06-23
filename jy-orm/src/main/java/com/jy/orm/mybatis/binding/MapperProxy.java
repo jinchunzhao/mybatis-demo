@@ -75,6 +75,7 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
                     //ID为mapper类全名+方法名
                     result = defaultSqlSession.selectList(statementId,args);
                 }else {
+                    //returnType是对象时，查询一个
                     result = defaultSqlSession.selectOne(statementId,args);
                 }
                 break;

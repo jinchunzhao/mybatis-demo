@@ -17,7 +17,6 @@ import java.util.List;
  */
 public class QueryRunnerTest {
 
-
     public void insert() throws SQLException{
 
         QueryRunner runner = new QueryRunner(JdbcUtils.getDataSource());

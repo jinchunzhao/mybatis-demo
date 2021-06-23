@@ -21,10 +21,10 @@ public interface SqlSession {
      * @return
      *        结果信息
      */
-    public <T> T selectOne(String statementId,Object parameter);
+    <T> T selectOne(String statementId,Object parameter);
 
     /**
-     * 查询多天记录
+     * 查询多条记录
      *
      * @param statementId
      *        mapper类全名+方法名
@@ -35,7 +35,7 @@ public interface SqlSession {
      * @return
      *        结果信息
      */
-    public <E> List<E> selectList(String statementId, Object parameter);
+    <E> List<E> selectList(String statementId, Object parameter);
 
     /**
      * 更新
@@ -45,7 +45,7 @@ public interface SqlSession {
      * @param parameter
      *        参数列表
      */
-    public void update(String statementId, Object parameter);
+    void update(String statementId, Object parameter);
 
     /**
      * 插入
@@ -55,5 +55,5 @@ public interface SqlSession {
      * @param parameter
      *        参数列表
      */
-    public void insert(String statementId, Object parameter);
+    void insert(String statementId, Object parameter);
 }

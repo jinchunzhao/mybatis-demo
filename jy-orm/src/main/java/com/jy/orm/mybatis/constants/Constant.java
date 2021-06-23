@@ -18,7 +18,7 @@ public interface Constant {
     String CHARSET_UTF8 = "UTF-8";
 
     /***********在properties文件中配置信息***********************/
-    String MAPPER_LOCATION = "mapper.loaction";
+    String MAPPER_LOCATION = "mapper.location";
     String DB_DRIVER_CONF = "db.driver";
     String DB_URL_CONF = "db.url";
     String DB_USERNAME_CONF = "db.username";

@@ -6,6 +6,10 @@ import java.util.List;
 
 /**
  * mybatis执行器
+ *
+ * <p>
+ *     对JDBC的执行进行了封装
+ * </p>
  * 
  * @author jinchunzhao
  * @version 1.0

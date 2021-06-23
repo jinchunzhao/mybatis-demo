@@ -4,6 +4,7 @@ package com.jy.orm.mybatis.session;
 import com.jy.orm.mybatis.executor.Executor;
 import com.jy.orm.mybatis.executor.SimpleExecutor;
 import com.jy.orm.mybatis.mapping.MappedStatement;
+import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.List;
 
@@ -16,12 +17,18 @@ import java.util.List;
  */
 public class DefaultSqlSession implements SqlSession{
 
+    /**
+     * JDBC信息
+     */
     private final Configuration configuration;
 
+    /**
+     * 执行器，JDBC的执行进行了封装
+     */
     private final Executor executor;
 
     /**
-     * 默认构造汉朝
+     * 默认构造函数
      *
      * @param configuration
      *        JDBC参数信息
@@ -34,7 +41,7 @@ public class DefaultSqlSession implements SqlSession{
     @Override
     public <T> T selectOne(String statementId, Object parameter) {
         List<T> results = this.<T>selectList(statementId, parameter);
-        if(results == null || results.size() == 0){
+        if(CollectionUtils.isEmpty(results)){
             return null;
         }
         if (results.size() == 1) {

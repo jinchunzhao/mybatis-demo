@@ -17,7 +17,7 @@
     </settings>
     <!-- 配置别名 -->
     <typeAliases>
-        <package name ="com.jy.study.mybatis.entity"/>
+        <package name ="com.jy.study.entity"/>
     </typeAliases>
     <!-- 类型处理器：定义Java类型与数据库中的数据类型之间的转换关系 -->
 <!--    <typeHandlers></typeHandlers>-->
@@ -32,7 +32,7 @@
         <!-- 环境变量：可以配置多个环境变量，比如使用多数据源时，就需要配置多个环境变量 -->
         <environment id="development">
             <!-- 事务管理器 -->
-            <transactionManager type="JDBC"></transactionManager>
+            <transactionManager type="JDBC"/>
             <!-- 数据源 -->
             <dataSource type="UNPOOLED">
                 <property name = "driver" value = "com.mysql.jdbc.Driver"/>
@@ -47,7 +47,9 @@
 <!--    <databaseIdProvider type=""></databaseIdProvider>-->
 
     <mappers>
+<!--        常规做法-->
         <mapper resource = "com/jy/study/mybatis/mapper/AdminMapper.xml"/>
+<!--        第二种做法-->
 <!--        <package name="com.jy.study.mybatis.mapper"/>-->
 
     </mappers>
