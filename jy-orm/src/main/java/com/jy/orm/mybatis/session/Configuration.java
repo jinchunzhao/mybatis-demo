@@ -6,6 +6,7 @@ import com.jy.orm.mybatis.mapping.MappedStatement;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 /**
@@ -32,7 +33,7 @@ public class Configuration {
      * mapper.xml 中的方法信息
      * key：namespace+sqlId
      */
-    protected final Map<String, MappedStatement> mappedStatements = new HashMap<>();
+    protected final Map<String, MappedStatement> mappedStatements = new ConcurrentHashMap<>();
 
     /**
      * 代理

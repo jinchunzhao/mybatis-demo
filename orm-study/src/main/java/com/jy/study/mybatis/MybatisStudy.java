@@ -39,6 +39,7 @@ public class MybatisStudy {
         //调用mapper接口对象的方法操作数据库， 执行代理对象的方法结果进行封装
         List<Admin> adminList = adminMapper.selectAll();
 
+        //ibatis的使用方式
 //        List<Admin> admins = sqlSession.selectList("com.jy.study.mybatis.mapper.AdminMapper.selectAll");
         //业务处理
 

@@ -4,27 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="使用jdbc dbutils操作数据库">
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/PreparedStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/SimpleStatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/StatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/parameter/DefaultParameterHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/parameter/ParameterHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="优化代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/constants/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/constants/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/Executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/Executor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/mapping/MappedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/mapping/MappedStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/PreparedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/statement/PreparedStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/SimpleStatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/SimpleStatementHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/StatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/StatementHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/parameter/DefaultParameterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/parameter/DefaultParameterHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/parameter/ParameterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/parameter/ParameterHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSessionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/resources/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/dbutils/QueryRunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/dbutils/QueryRunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisStudy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisStudy.java" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/src/main/java/com/jy/study/mybatis/MybatisStudy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +100,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.JdbcStudy" />
@@ -132,7 +133,8 @@
       <workItem from="1623853140292" duration="178000" />
       <workItem from="1624176251427" duration="10866000" />
       <workItem from="1624279539115" duration="3361000" />
-      <workItem from="1624446571876" duration="1313000" />
+      <workItem from="1624446571876" duration="1362000" />
+      <workItem from="1624532952068" duration="1883000" />
     </task>
     <task id="LOCAL-00001" summary="手写简易ORM框架 半成品">
       <created>1622723397729</created>
@@ -155,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624181380992</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="优化代码">
+      <created>1624451454518</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624451454518</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +185,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="手写简易ORM框架 半成品" />
     <MESSAGE value="使用jdbc dbutils操作数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用jdbc dbutils操作数据库" />
+    <MESSAGE value="优化代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

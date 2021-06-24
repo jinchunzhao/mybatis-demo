@@ -2,11 +2,11 @@ package com.jy.orm.mybatis.executor;
 
 import com.jy.orm.mybatis.executor.resultset.DefaultResultSetHandler;
 import com.jy.orm.mybatis.executor.resultset.ResultSetHandler;
-import com.jy.orm.mybatis.handler.PreparedStatement;
+import com.jy.orm.mybatis.executor.statement.PreparedStatement;
 import com.jy.orm.mybatis.handler.SimpleStatementHandler;
 import com.jy.orm.mybatis.handler.StatementHandler;
-import com.jy.orm.mybatis.handler.parameter.DefaultParameterHandler;
-import com.jy.orm.mybatis.handler.parameter.ParameterHandler;
+import com.jy.orm.mybatis.executor.parameter.DefaultParameterHandler;
+import com.jy.orm.mybatis.executor.parameter.ParameterHandler;
 import com.jy.orm.mybatis.mapping.MappedStatement;
 import com.jy.orm.mybatis.session.Configuration;
 

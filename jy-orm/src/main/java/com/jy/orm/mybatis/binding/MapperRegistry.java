@@ -5,6 +5,7 @@ import com.jy.orm.mybatis.session.SqlSession;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * MapperRegistry
@@ -18,7 +19,7 @@ public class MapperRegistry {
     /**
      * the knownMappers
      */
-    private final Map<Class<?>,MapperProxyFactory<?>> knownMappers = new HashMap<>();
+    private final Map<Class<?>,MapperProxyFactory<?>> knownMappers = new ConcurrentHashMap<>();
 
     /**
      * 注册代理工厂
