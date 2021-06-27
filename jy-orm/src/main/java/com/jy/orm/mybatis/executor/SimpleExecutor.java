@@ -14,6 +14,7 @@ import com.jy.orm.mybatis.executor.resultset.DefaultResultSetHandler;
 import com.jy.orm.mybatis.executor.resultset.ResultSetHandler;
 import com.jy.orm.mybatis.handler.SimpleStatementHandler;
 import com.jy.orm.mybatis.handler.StatementHandler;
+import com.jy.orm.mybatis.jdbc.JyConnection;
 import com.jy.orm.mybatis.mapping.MappedStatement;
 import com.jy.orm.mybatis.session.Configuration;
 
@@ -37,7 +38,7 @@ public class SimpleExecutor implements Executor {
         try {
 
             // //获取连接数据库
-            Connection connection = getConnection();
+            Connection connection = JyConnection.getConnection();
 
             // Connection connection = null;
             // 获取MappedStatement信息，里面有SQL信息
@@ -72,34 +73,5 @@ public class SimpleExecutor implements Executor {
 
     }
 
-    /**
-     * 获取数据库连接
-     *
-     * @return 数据库连接信息
-     * @throws SQLException
-     *             sql错误
-     */
-    public Connection getConnection() throws SQLException {
-        String url = Configuration.getProperty(Constant.DB_URL_CONF);
 
-        String username = Configuration.getProperty(Constant.DB_USERNAME_CONF);
-
-        String password = Configuration.getProperty(Constant.DB_PASSWORD);
-
-        Connection connection = DriverManager.getConnection(url, username, password);
-        return connection;
-    }
-
-    /**
-     * 每次别人获取连接的时候，都需要加载该类。但是一个类只需要加载一次就够了。静态代码块只需要执行一次。
-     */
-    static {
-        try {
-            String driver = Configuration.getProperty(Constant.DB_DRIVER_CONF);
-
-            Class.forName(driver);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
 }

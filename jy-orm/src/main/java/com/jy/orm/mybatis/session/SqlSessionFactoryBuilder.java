@@ -1,7 +1,10 @@
 package com.jy.orm.mybatis.session;
 
+import com.jy.orm.mybatis.exceptions.JyException;
+
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Objects;
 
 /**
  * SqlSessionFactoryBuilder - 构建者模式
@@ -20,7 +23,11 @@ public class SqlSessionFactoryBuilder {
      * @date 2021-05-22 17:18
      */
     public SqlSessionFactory build(String fileName) {
+
         InputStream inputStream = SqlSessionFactoryBuilder.class.getClassLoader().getResourceAsStream(fileName);
+        if (Objects.isNull(inputStream)){
+            throw new JyException(String.format("【%s】 File not found。", fileName));
+        }
         return build(inputStream);
     }
 

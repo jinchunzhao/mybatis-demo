@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="引入自定义异常">
+      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/jdbc/JyConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactoryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactoryBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jy-orm/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/resources/conf.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +154,7 @@
       <workItem from="1624532952068" duration="2229000" />
       <workItem from="1624675476219" duration="1708000" />
       <workItem from="1624750586110" duration="8311000" />
-      <workItem from="1624774790144" duration="2358000" />
+      <workItem from="1624774790144" duration="3115000" />
     </task>
     <task id="LOCAL-00001" summary="手写简易ORM框架 半成品">
       <created>1622723397729</created>
@@ -216,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624776996199</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="引入自定义异常">
+      <created>1624777184540</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1624777184540</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +289,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactoryBuilder.java</url>
-          <line>22</line>
+          <line>26</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
