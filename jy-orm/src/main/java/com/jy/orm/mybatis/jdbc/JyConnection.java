@@ -48,7 +48,7 @@ public class JyConnection {
      */
     public static Connection getConnection() throws SQLException {
 
-        if (Objects.isNull(connectionThreadLocal)){
+        if (Objects.isNull(connectionThreadLocal.get())){
             String url = Configuration.getProperty(Constant.DB_URL_CONF);
 
             String username = Configuration.getProperty(Constant.DB_USERNAME_CONF);
