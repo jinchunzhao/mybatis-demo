@@ -5,6 +5,7 @@ import com.jy.orm.mybatis.session.SqlSession;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -49,6 +50,9 @@ public class MapperRegistry {
     public <T> T getMapper(Class<T> type, DefaultSqlSession defaultSqlSession){
         MapperProxyFactory<T> mapperProxyFactory = (MapperProxyFactory<T>) this.knownMappers.get(type);
 
+        if (Objects.isNull(mapperProxyFactory)){
+            System.out.println("JDK动态代理失败");
+        }
         return mapperProxyFactory.newInstance(defaultSqlSession);
     }
 

@@ -27,9 +27,9 @@ public class DefaultSqlSessionFactory implements SqlSessionFactory{
     }
 
     @Override
-    public SqlSession openSession() {
+    public DefaultSqlSession openSession() {
         //SqlSession对象就是jdbc信息
-        SqlSession sqlSession = new DefaultSqlSession(this.configuration);
+        DefaultSqlSession sqlSession = new DefaultSqlSession(this.configuration);
         return sqlSession;
     }
 
@@ -41,13 +41,16 @@ public class DefaultSqlSessionFactory implements SqlSessionFactory{
      */
     private void loadMappersInfo(String dirName){
 
-        URL  resources = DefaultSqlSessionFactory.class.getClassLoader().getResource(dirName);
+//        URL  resources = DefaultSqlSessionFactory.class.getClassLoader().getResource(dirName);
 
-        File mappersDir = new File(resources.getFile());
+//        File mappersDir = new File(resources.getFile());
 
-        if (!mappersDir.isDirectory()){
-            return;
-        }
+        String file1 = this.getClass().getClassLoader().getResource(dirName).getFile();
+        File mappersDir = new File(file1);
+
+//        if (!mappersDir.isDirectory()){
+//            return;
+//        }
 
         //显示包下所有的文件
         File[] mappers = mappersDir.listFiles();

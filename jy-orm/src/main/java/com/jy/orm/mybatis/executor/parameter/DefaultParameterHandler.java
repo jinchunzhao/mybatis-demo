@@ -1,6 +1,7 @@
 package com.jy.orm.mybatis.executor.parameter;
 
-import com.jy.orm.mybatis.executor.statement.PreparedStatement;
+
+import java.sql.PreparedStatement;
 
 public class DefaultParameterHandler implements ParameterHandler {
 
@@ -12,6 +13,7 @@ public class DefaultParameterHandler implements ParameterHandler {
 
     @Override
     public void setParameters(PreparedStatement preparedStatement) {
+//        preparedStatement.
 
     }
 }

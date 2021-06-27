@@ -1,7 +1,7 @@
 package com.jy.orm.mybatis.enums;
 
 /**
- * SQL枚举类型  select\insert\update
+ * SQL枚举类型  select、insert、update
  *
  * @author jinchunzhao
  * @version 1.0

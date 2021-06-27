@@ -13,5 +13,5 @@ public interface SqlSessionFactory {
      *
      * @return SqlSession
      */
-    SqlSession openSession();
+    DefaultSqlSession openSession();
 }

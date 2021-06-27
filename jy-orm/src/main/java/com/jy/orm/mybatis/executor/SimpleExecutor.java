@@ -1,8 +1,8 @@
 package com.jy.orm.mybatis.executor;
 
+import com.jy.orm.mybatis.constants.Constant;
 import com.jy.orm.mybatis.executor.resultset.DefaultResultSetHandler;
 import com.jy.orm.mybatis.executor.resultset.ResultSetHandler;
-import com.jy.orm.mybatis.executor.statement.PreparedStatement;
 import com.jy.orm.mybatis.handler.SimpleStatementHandler;
 import com.jy.orm.mybatis.handler.StatementHandler;
 import com.jy.orm.mybatis.executor.parameter.DefaultParameterHandler;
@@ -12,7 +12,10 @@ import com.jy.orm.mybatis.session.Configuration;
 
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -22,7 +25,7 @@ import java.util.List;
  * @version 1.0
  * @date 2021-05-22 20:10
  */
-public class SimpleExecutor implements Executor{
+public class SimpleExecutor implements Executor {
 
     private Configuration configuration;
 
@@ -35,9 +38,9 @@ public class SimpleExecutor implements Executor{
         try {
 
 //            //获取连接数据库
-//            Connection connection = getConnect();
+            Connection connection = getConnection();
 
-            Connection connection = null;
+//            Connection connection = null;
             //获取MappedStatement信息，里面有SQL信息
             MappedStatement mappedStatement = configuration.getMappedStatement(ms.getSqlId());
 //
@@ -59,7 +62,7 @@ public class SimpleExecutor implements Executor{
             ResultSetHandler resultSetHandler = new DefaultResultSetHandler(mappedStatement);
             return resultSetHandler.handleResultSets(resultSet);
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -68,5 +71,34 @@ public class SimpleExecutor implements Executor{
     @Override
     public void doUpdate(MappedStatement ms, Object parameter) {
 
+    }
+
+
+    /**
+     * 获取数据库连接
+     *
+     * @return 数据库连接信息
+     * @throws SQLException sql错误
+     */
+    public Connection getConnection() throws SQLException {
+        String url = Configuration.getProperty(Constant.DB_URL_CONF);
+
+        String username = Configuration.getProperty(Constant.DB_USERNAME_CONF);
+
+        String password = Configuration.getProperty(Constant.DB_PASSWORD);
+
+        Connection connection = DriverManager.getConnection(url, username, password);
+        return connection;
+    }
+
+    //每次别人获取连接的时候，都需要加载该类。但是一个类只需要加载一次就够了。静态代码块只需要执行一次。
+    static {
+        try {
+            String driver = Configuration.getProperty(Constant.DB_DRIVER_CONF);
+
+            Class.forName(driver);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 }
