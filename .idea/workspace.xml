@@ -4,39 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="包路径更改">
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/sql/SqlConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/test/java/com/jy/TestJyOrm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/test/java/com/jy/orm/aa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/test/java/com/jy/orm/dao/AdminMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/test/java/com/jy/orm/dao/AdminMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/test/java/com/jy/orm/entity/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/test/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/JyOrmApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/JyOrmApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/enums/SqlType.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/enums/SqlType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/parameter/DefaultParameterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/parameter/DefaultParameterHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/parameter/ParameterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/parameter/ParameterHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/statement/PreparedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/statement/PreparedStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/SimpleStatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/SimpleStatementHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/StatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/StatementHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSessionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/resources/conf.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orm-study/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/target/classes/com/jy/study/OrmStudyApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/target/classes/com/jy/study/mybatis/MybatisTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/target/classes/com/jy/study/mybatis/aa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/target/classes/com/jy/study/mybatis/entity/Admin$BuiltIn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/target/classes/com/jy/study/mybatis/entity/Admin$Enable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/target/classes/com/jy/study/mybatis/entity/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/target/classes/com/jy/study/mybatis/mapper/AdminMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/target/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm-study/target/test-classes/com/jy/AppTest.class" beforeDir="false" />
+    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="实现不带参数的orm框架查询数据功能">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +148,7 @@
       <workItem from="1624446571876" duration="1362000" />
       <workItem from="1624532952068" duration="2229000" />
       <workItem from="1624675476219" duration="1708000" />
-      <workItem from="1624750586110" duration="7569000" />
+      <workItem from="1624750586110" duration="7918000" />
     </task>
     <task id="LOCAL-00001" summary="手写简易ORM框架 半成品">
       <created>1622723397729</created>
@@ -216,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624536069015</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="实现不带参数的orm框架查询数据功能">
+      <created>1624758394022</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624758394022</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +215,8 @@
     <MESSAGE value="使用jdbc dbutils操作数据库" />
     <MESSAGE value="优化代码" />
     <MESSAGE value="包路径更改" />
-    <option name="LAST_COMMIT_MESSAGE" value="包路径更改" />
+    <MESSAGE value="实现不带参数的orm框架查询数据功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现不带参数的orm框架查询数据功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
