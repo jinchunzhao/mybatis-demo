@@ -11,7 +11,6 @@ import com.jy.orm.mybatis.enums.SqlType;
  */
 public class MappedStatement {
 
-
     /**
      * 命名空间namespace，对应着mapper接口的全路径名
      */
@@ -79,12 +78,7 @@ public class MappedStatement {
 
     @Override
     public String toString() {
-        return "MappedStatement{" +
-                "namespace='" + namespace + '\'' +
-                ", sqlId='" + sqlId + '\'' +
-                ", resultType='" + resultType + '\'' +
-                ", sql='" + sql + '\'' +
-                ", sqlCommandType=" + sqlCommandType +
-                '}';
+        return "MappedStatement{" + "namespace='" + namespace + '\'' + ", sqlId='" + sqlId + '\'' + ", resultType='"
+            + resultType + '\'' + ", sql='" + sql + '\'' + ", sqlCommandType=" + sqlCommandType + '}';
     }
 }

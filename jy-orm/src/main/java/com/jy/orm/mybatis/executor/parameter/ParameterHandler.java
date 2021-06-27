@@ -1,6 +1,5 @@
 package com.jy.orm.mybatis.executor.parameter;
 
-
 import java.sql.PreparedStatement;
 
 public interface ParameterHandler {

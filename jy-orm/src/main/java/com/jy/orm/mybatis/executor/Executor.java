@@ -1,14 +1,13 @@
 package com.jy.orm.mybatis.executor;
 
-import com.jy.orm.mybatis.mapping.MappedStatement;
-
 import java.util.List;
+
+import com.jy.orm.mybatis.mapping.MappedStatement;
 
 /**
  * mybatis执行器
- *
  * <p>
- *     对JDBC的执行进行了封装
+ * 对JDBC的执行进行了封装
  * </p>
  * 
  * @author jinchunzhao
@@ -21,23 +20,22 @@ public interface Executor {
      * 查询数据列表
      *
      * @param ms
-     *        MappedStatement
+     *            MappedStatement
      * @param parameter
-     *        参数列表
+     *            参数列表
      * @param <E>
-     *        泛型
-     * @return
-     *        结果数据
+     *            泛型
+     * @return 结果数据
      */
-    <E> List<E> doQuery(MappedStatement ms,Object parameter);
+    <E> List<E> doQuery(MappedStatement ms, Object parameter);
 
     /**
      * 更新操作
      *
      * @param ms
-     *        MappedStatement
+     *            MappedStatement
      * @param parameter
-     *        参数列表
+     *            参数列表
      */
-    void doUpdate(MappedStatement ms,Object parameter);
+    void doUpdate(MappedStatement ms, Object parameter);
 }

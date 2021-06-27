@@ -1,13 +1,12 @@
 package com.jy.orm.mybatis.binding;
 
-import com.jy.orm.mybatis.mapping.MappedStatement;
-import com.jy.orm.mybatis.session.DefaultSqlSession;
-import com.jy.orm.mybatis.session.SqlSession;
-
 import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.Collection;
+
+import com.jy.orm.mybatis.mapping.MappedStatement;
+import com.jy.orm.mybatis.session.DefaultSqlSession;
 
 /**
  * Mapper代理
@@ -40,12 +39,12 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
         try {
-            if (Object.class.equals(method.getDeclaringClass())){
-                return method.invoke(this,args);
+            if (Object.class.equals(method.getDeclaringClass())) {
+                return method.invoke(this, args);
             }
             return this.execute(method, args);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -66,28 +65,29 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
         MappedStatement ms = this.defaultSqlSession.getConfiguration().getMappedStatement(statementId);
 
         Object result = null;
-        switch (ms.getSqlCommandType()){
-            case SELECT:{
+        switch (ms.getSqlCommandType()) {
+            case SELECT: {
                 Class<?> returnType = method.getReturnType();
 
-                //如果返回的是list,应该调用查询多个结果的方法，否则只要查询单条记录
-                if(Collection.class.isAssignableFrom(returnType)){
-                    //ID为mapper类全名+方法名
-                    result = defaultSqlSession.selectList(statementId,args);
-                }else {
-                    //returnType是对象时，查询一个
-                    result = defaultSqlSession.selectOne(statementId,args);
+                // 如果返回的是list,应该调用查询多个结果的方法，否则只要查询单条记录
+                if (Collection.class.isAssignableFrom(returnType)) {
+                    // ID为mapper类全名+方法名
+                    result = defaultSqlSession.selectList(statementId, args);
+                } else {
+                    // returnType是对象时，查询一个
+                    result = defaultSqlSession.selectOne(statementId, args);
                 }
                 break;
             }
-            case UPDATE:{
+            case UPDATE: {
                 defaultSqlSession.update(statementId, args);
                 break;
             }
-            case INSERT:{
-                defaultSqlSession.insert(statementId,args);
+            case INSERT: {
+                defaultSqlSession.insert(statementId, args);
                 break;
-            }default :{
+            }
+            default: {
                 break;
             }
         }

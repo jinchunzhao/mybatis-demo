@@ -14,17 +14,15 @@ public interface ResultSetHandler {
 
     /**
      * 处理查询结果
-     *
      * <p>
-     *     通过反射设置到返回的实体类
+     * 通过反射设置到返回的实体类
      * </p>
      *
      * @param resultSet
-     *        查询结果
+     *            查询结果
      * @param <E>
-     *        泛型
-     * @return
-     *        结果数据
+     *            泛型
+     * @return 结果数据
      */
     <E> List<E> handleResultSets(ResultSet resultSet);
 }

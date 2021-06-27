@@ -1,9 +1,8 @@
 package com.jy.orm.mybatis.binding;
 
+import com.jy.orm.mybatis.exceptions.JyException;
 import com.jy.orm.mybatis.session.DefaultSqlSession;
-import com.jy.orm.mybatis.session.SqlSession;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
@@ -51,7 +50,7 @@ public class MapperRegistry {
         MapperProxyFactory<T> mapperProxyFactory = (MapperProxyFactory<T>) this.knownMappers.get(type);
 
         if (Objects.isNull(mapperProxyFactory)){
-            System.out.println("JDK动态代理失败");
+            throw new JyException("Expected to get the JDK dynamic proxy factory, but failed。");
         }
         return mapperProxyFactory.newInstance(defaultSqlSession);
     }

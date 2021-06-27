@@ -1,13 +1,14 @@
 package com.jy.orm.mybatis.handler;
 
-import com.jy.orm.mybatis.executor.parameter.ParameterHandler;
-import com.jy.orm.mybatis.mapping.MappedStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class SimpleStatementHandler implements StatementHandler{
+import com.jy.orm.mybatis.executor.parameter.ParameterHandler;
+import com.jy.orm.mybatis.mapping.MappedStatement;
+
+public class SimpleStatementHandler implements StatementHandler {
 
     private final MappedStatement mappedStatement;
 
@@ -23,8 +24,8 @@ public class SimpleStatementHandler implements StatementHandler{
     }
 
     @Override
-    public ResultSet query(PreparedStatement ps) throws SQLException{
-//        ps.execute();
+    public ResultSet query(PreparedStatement ps) throws SQLException {
+        // ps.execute();
         ResultSet resultSet = ps.executeQuery();
         return resultSet;
     }
@@ -34,16 +35,14 @@ public class SimpleStatementHandler implements StatementHandler{
         return null;
     }
 
-
     /**
      * 初始化Statement
      *
      * @param connection
-     *        连接
-     * @return
-     *         Statement
+     *            连接
+     * @return Statement
      * @throws SQLException
-     *         任何异常
+     *             任何异常
      */
     protected PreparedStatement instantiateStatement(Connection connection) throws SQLException {
         return connection.prepareStatement(mappedStatement.getSql());
@@ -51,8 +50,9 @@ public class SimpleStatementHandler implements StatementHandler{
 
     /**
      * 关闭 statement
+     * 
      * @param statement
-     *        PreparedStatement
+     *            PreparedStatement
      */
     protected void closeStatement(PreparedStatement statement) {
         try {
