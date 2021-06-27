@@ -4,34 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="添加忽略文件">
-      <change afterPath="$PROJECT_DIR$/.idea/eclipseCodeFormatter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/exceptions/JyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperProxyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/binding/MapperRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/constants/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/constants/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/enums/SqlType.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/enums/SqlType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/Executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/Executor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/SimpleExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/parameter/ParameterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/parameter/ParameterHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/resultset/DefaultResultSetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/resultset/DefaultResultSetHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/resultset/ResultSetHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/resultset/ResultSetHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/SimpleStatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/SimpleStatementHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/StatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/handler/StatementHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/mapping/MappedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/mapping/MappedStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/DefaultSqlSessionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactoryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactoryBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/utils/XmlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/utils/XmlUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/sql/SqlConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/test/java/com/jy/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jy-orm/src/test/java/com/jy/orm/aa.java" beforeDir="false" />
+    <list default="true" id="64ddbbe0-eec6-4ab8-beeb-b127951d15e3" name="Default Changelist" comment="引入自定义异常">
+      <change beforePath="$PROJECT_DIR$/jy-orm/src/main/resources/conf.properties" beforeDir="false" afterPath="$PROJECT_DIR$/jy-orm/src/main/resources/conf.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +151,7 @@
       <workItem from="1624532952068" duration="2229000" />
       <workItem from="1624675476219" duration="1708000" />
       <workItem from="1624750586110" duration="8311000" />
-      <workItem from="1624774790144" duration="1909000" />
+      <workItem from="1624774790144" duration="2358000" />
     </task>
     <task id="LOCAL-00001" summary="手写简易ORM框架 半成品">
       <created>1622723397729</created>
@@ -235,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624758855738</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="引入自定义异常">
+      <created>1624776996199</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1624776996199</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +241,8 @@
     <MESSAGE value="包路径更改" />
     <MESSAGE value="实现不带参数的orm框架查询数据功能" />
     <MESSAGE value="添加忽略文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加忽略文件" />
+    <MESSAGE value="引入自定义异常" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入自定义异常" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -289,6 +271,16 @@
           <url>file://$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/executor/resultset/DefaultResultSetHandler.java</url>
           <line>29</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jy-orm/src/test/java/com/jy/TestJyOrm.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jy-orm/src/main/java/com/jy/orm/mybatis/session/SqlSessionFactoryBuilder.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
